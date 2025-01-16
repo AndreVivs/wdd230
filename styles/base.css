@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Montserrat", "Noto-Sans", sans-serif;
   background-color: #f0f0f0;
   color: #272626;
 }
@@ -22,14 +23,13 @@ header div {
 
 .student-img {
   border-radius: 8px;
-  max-width: 125px;
+  width: 125px;
   height: auto;
   margin: 0 1%;
 }
 
 h1 {
   color: white;
-  font-family: "Montserrat", sans-serif;
   margin-left: 2%;
 }
 
