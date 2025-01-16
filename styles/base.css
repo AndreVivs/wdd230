@@ -46,10 +46,12 @@ nav {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  color: #59848b;
 }
 
 #menu::before {
   content: "☰";
+  color: black;
 }
 
 #menu.open::before {
