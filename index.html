@@ -1,99 +1,76 @@
-<!DOCTYPE html> <!--This declaration defines the document type and version of HTML -->
-<html lang="en"> <!-- specifying the language of the document -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Los meta datos describen el contenido de los archivos o la informacion que estos traen en su interior -->
     <meta charset="UTF-8">
-    <!-- Defines the character encoding for the document as UTF-8, which supports most characters from human languages. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- sets the initial zoom level to 1.0. This is important for responsive web design. -->
-    <title>Andrea Ramos Vivas - WDD 230 - Dynamic Web Fundamentals</title>
-    <!-- appears in the browser's title bar or tab -->
-    <meta name="description"
-        content="WDD 230 - Web Frontend Development - Andrea Ramos Vivas - Course assignment portal">
-    <!-- Provides a brief description of the page content for search engines and social media sharing -->
-    <meta name="author" content="Andrea Ramos Vivas"> <!-- Specifies the author of the document -->
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Andrea Ramos">
+    <meta name="author" content="Andrea Ramos Vivas">
 
-    <meta property="og:title" content="Dynamic Web Fundamentals Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/og-image.jpg">
-    <meta property="og:url" content="https://andrevivs.github.io/wdd230/">
 
-    <link rel="icon" href="favicon.ico">
+    <title>Andrea Vivas - WDD 230 - Web Frontend Development</title> <!-- appears in the browser's title bar or tab -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
-    <script src="scripts/getDates.js" async defer></script>
+    <!-- Scripts -->
+    <script src="scripts/index.js" async defer></script>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://andrevivs.github.io/wdd230/">
+
 </head>
 
-<body class="container">
+<body>
     <header>
-        <div class="header-container">
-            <img class="logo" src="images/andy.jpeg" alt="Logo" />
-            <h1>WDD 131 - Dynamic Web Fundamentals - Andrea Ramos</h1>
+        <div>
+            <img class="student-img" src="images/andy.jpeg" alt="Logo" />
+            <h1>Web Frontend Development <br /> Andrea Vivas </h1>
+            <div id="mode">🕶️</div>
         </div>
-        <nav class="menu-container">
-            <a class="menu" href="#">Home</a>
-            <a class="menu" href="week01/chamber-site-plan.html">Bellvue Chamber</a>
-            <a class="menu" href="#">Site Plan</a>
-            <a class="menu" href="#">Form</a>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" class="active">Home</a></li>
+                <li><a href="week01/chamber-site-plan.html" title="Bellvue Chamber">Bellvue Chamber</a></li>
+                <li><a href="#" title="Site Plan">Site Plan</a></li>
+                <li><a href="#" title="Form">Form</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="main-side">
-            <h2>About Me</h2>
-            <div class="section1">
-                <p class="text">
-                    Hey there, this is Andrea. I born close to Mexico City but I lived all my life there.
-                    Currentrly I'm living in Washington State and I'm working as Au Pair, taking care of
-                    an amazing baby. I love do crafts, dance, lisent to music and learn new recipies to cook.
-                </p>
-
-                <div class="photos">
-                    <img class="playing" src="images/rebe.jpeg" alt="Playing with kids" />
-                    <img class="andy" src="images/andy1.jpeg" alt="Andy" />
-                </div>
-            </div>
-
-            <h2>Mexico, Mexico City</h2>
-            <hr>
-            <div class="section1">
-                <img src="images/mexico.jpeg" alt="Playing with kids" />
-                <p class="text">
-                    Mexico, whose official name is the United Mexican States, is a sovereign country located
-                    in the southern part of North America; Its capital and most populated city is Mexico City.
-                    According to the current constitution, its form of government consists of a representative,
-                    democratic, secular and federal republic, composed of 32 federal entities (31 states and the
-                    capital).
-                    The Mexican territory has an area of 1,964,375 km², making it the thirteenth largest country in the
-                    world
-                    and the third largest in Latin America.
-                </p>
-            </div>
+        <section class="section1">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="https://codepen.io/AndreVivs/pen/dPbKONm">Week 02 Hambmenu Codepen</a></li>
+                <li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">Mmdn_</a></li>
+                <li><a href="https://www.codewars.com/">Codewars</a></li>
+                <li><a href="https://www.behance.net/">Behance</a></li>
+            </ul>
         </section>
 
-        <section class="aside-side">
-            <h2>Web Dev Resources</h2>
-            <div>
-                <ul class="section2">
-                    <li><a href="https://codepen.io/AndreVivs/pen/dPbKONm">Week 02 Hambmenu Codepen</a></li>
-                    <li><a href="https://stackoverflow.com/">Stackoverflow</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/">Mmdn_</a></li>
-                    <li><a href="https://www.codewars.com/">Codewars</a></li>
-                    <li><a href="https://www.behance.net/">Behance</a></li>
-                </ul>
-            </div>
+        <section class="section2">
+            <h2>Information</h2>
+            <p>Weather: Placeholder</p>
+            <p>Number of visits: Placeholder</p>
         </section>
     </main>
 
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span>
-            Andrea Ramos | Washington State
-        </p>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
         <p id="lastModified"></p>
     </footer>
 </body>
