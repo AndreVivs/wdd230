@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Noto-Sans", sans-serif;
+  background-color: #f0f0f0;
+  color: #272626;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 160px 1fr;
+}
+
+.hero {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 100%;
+  height: 70%;
+  box-shadow: inset 0 3em 3em rgba(68, 87, 94, 0.7);
+}
+
+.logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 170px;
+  height: auto;
+  border-radius: 3%;
+}
+
+header button {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  align-items: end;
+  width: 100px;
+  height: 50px;
+  border-radius: 25%;
+}
+
+nav {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin: 0 auto;
+  align-content: center;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #59848b;
+}
+
+#menu::before {
+  content: "☰";
+  color: black;
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navigation a:hover {
+  background-color: #dfe9ec;
+  color: #252f31;
+  font-weight: 700;
+}
+
+.open a {
+  display: block;
+}
+
+.active::before {
+  content: "📍 "; /* just a wayfinding symbol for the user */
+}
