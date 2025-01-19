@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Scripts -->
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js" defer async></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
@@ -49,10 +49,106 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="canva">
+        <section class="intro">
+            <h2>Our Downtown</h2>
+            <p>Bellevue is a city in Washington state. It's in the Seattle metropolitan area, known for its shopping
+                centers,
+                including the large upscale Bellevue Square. The Bellevue Arts Museum exhibits crafts and design.
+                The
+                Bellevue
+                Botanical Garden highlights Pacific Northwest plants, and includes a wetlands area. Nearby, the
+                KidsQuest Children’s
+                Museum features interactive science, tech and art exhibits. Downtown Park has a large lawn and a
+                waterfall.</p>
+        </section>
+
+        <section class="events">
+            <h2>WHAT'S HAPPENING</h2>
+            <div>
+                <img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay">
+                <p>Annual Celebration</p>
+                <p> Thursday Feb 6th | 12pm - 1pm | Meydenbauer Center</p>
+            </div>
+            <div>
+                <div>
+                    <p>Jan 10, 2025</p>
+                    <h3>New Year, New Openings in Downtown Bellevue</h3>
+                    <p>Downtown Bellevue is buzzing with excitement as 2025 brings a wave of new openings.</p>
+                </div>
+                <div>
+                    <p>Jan 10, 2025</p>
+                    <h3>New Year, New Openings in Downtown Bellevue</h3>
+                    <p>Downtown Bellevue is buzzing with excitement as 2025 brings a wave of new openings.</p>
+                </div>
+                <div>
+                    <p>Jan 10, 2025</p>
+                    <h3>New Year, New Openings in Downtown Bellevue</h3>
+                    <p>Downtown Bellevue is buzzing with excitement as 2025 brings a wave of new openings.</p>
+                </div>
+                <button type="button">EXPLORE MORE -></button>
+            </div>
+        </section>
+
+        <section class="spotlights">
+            <div class="spotlight">
+                <img src="images/jazz.jpg" alt="View of the Bellvue City">
+                <h3>Umami Jazz Fusion</h3>
+                <p>Friday Jan 24th | 8pm - 10pm | Bake's Place | Bar & Bistro</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/pilates.jpg" alt="View of the Bellvue City">
+                <h3>Core Resolution: Free Pilates for New Year</h3>
+                <p>Saturday Jan 18th | 12pm - 1pm | TruFusion</p>
+            </div>
+            <div class="spotlight">
+                <img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay">
+                <h3>Annual Celebration</h3>
+                <p> Thursday Feb 6th | 12pm - 1pm | Meydenbauer Center</p>
+            </div>
+        </section>
+
+        <div class="weather">
+
+            <h2>Brussels</h2>
+            <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
+            <h1>23°</h1>
+            <div class="sky">
+                <div class="sun"></div>
+                <div class="cloud">
+                    <div class="circle-small"></div>
+                    <div class="circle-tall"></div>
+                    <div class="circle-medium"></div>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td>TUE</td>
+                    <td>WED</td>
+                    <td>THU</td>
+                    <td>FRI</td>
+                    <td>SAT</td>
+                </tr>
+                <tr>
+                    <td>30°</td>
+                    <td>34°</td>
+                    <td>36°</td>
+                    <td>34°</td>
+                    <td>37°</td>
+                </tr>
+                <tr>
+                    <td>17°</td>
+                    <td>22°</td>
+                    <td>19°</td>
+                    <td>23°</td>
+                    <td>19°</td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
-        <p>&copy; Bellvue Chamber of Commerce</p>
+        <p>&copy;Bellvue Chamber of Commerce</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
