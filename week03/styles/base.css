@@ -1,0 +1,39 @@
+.cards {
+  display: block;
+}
+
+.card {
+  width: 500px;
+  height: 770px;
+  background-color: rgb(196, 194, 179);
+  margin: 20px;
+}
+
+img {
+  margin: 50px 50px 20px 50px;
+  width: 400px;
+  height: 600px;
+  animation: fade 15s;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+main {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
