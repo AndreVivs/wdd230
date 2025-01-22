@@ -37,7 +37,7 @@
 <body>
     <header>
         <div>
-            <img class="student-img" src="images/andy.jpeg" alt="Student picture going on a hike" />
+            <img class="student-img" src="images/student.webp" alt="Student picture going on a hike" loading="lazy" />
             <h1>Web Frontend Development <br /> Andrea Vivas </h1>
             <div id="mode">🕶️</div>
         </div>
@@ -53,6 +53,16 @@
     </header>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small-temple.webp" media="(max-width: 400px)" loading="lazy">
+                <source srcset="images/hero-medium-temple.webp" media="(max-width: 960px)" loading="lazy">
+                <img src="images/hero-large-temple.webp" alt="table setting" width="1500" height="750" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <p>Puebla Mexico Temple</p>
+            </div>
+        </div>
         <section class="section1">
             <h2>Learning Activities</h2>
             <h3>Week 02</h3>
@@ -73,7 +83,11 @@
         <section class="section2">
             <h2>Information</h2>
             <p>Weather: Placeholder</p>
-            <p>Number of visits: Placeholder</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.467882761382!2d-99.16520134999999!3d19.41815295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff39f2a2e4cd%3A0x2d9a33e867c32532!2sRoma%20Nte.%2C%2006700%20Mexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1737575545060!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
