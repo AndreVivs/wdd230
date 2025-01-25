@@ -12,7 +12,7 @@ body {
 
 header {
   background-color: #59848b;
-  padding: 15px;
+  padding: 20px;
 }
 
 header div {
@@ -28,9 +28,11 @@ header div {
   margin: 0 1%;
 }
 
-h1 {
+header span {
   color: white;
   margin-left: 2%;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 nav {
@@ -90,6 +92,12 @@ nav {
 }
 
 /* finish navigation */
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  grid-column: 1 / 3;
+}
 
 #mode {
   position: absolute;
@@ -155,4 +163,20 @@ section {
   font-weight: 700;
   font-size: 1.5rem;
   font-family: "Great Vibes", serif;
+}
+
+.map {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  grid-column: 1 / 3;
+}
+
+.map iframe {
+  max-width: 100%; /* Asegúrate de que el iframe sea responsivo */
+  height: 100%; /* Asegúrate de que el iframe ocupe la altura del contenedor */
 }
