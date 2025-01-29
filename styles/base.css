@@ -177,6 +177,7 @@ section {
 }
 
 .map iframe {
-  max-width: 100%; /* Asegúrate de que el iframe sea responsivo */
-  height: 100%; /* Asegúrate de que el iframe ocupe la altura del contenedor */
+  max-width: 100%;
+  height: 100%;
+  border: 0;
 }
