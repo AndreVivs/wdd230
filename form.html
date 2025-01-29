@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="scripts/index.js" async defer></script>
+    <script src="scripts/form.js" async defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="student-img" src="images/student.webp" alt="Student picture going on a hike" width="125"
+                height="200" loading="lazy">
+            <span class="student-name">Andrea Vivas</span>
+            <div id="mode">🕶️</div>
+        </div>
+    </header>
+    <button type="button" id="menu">.</button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home Site">Home</a></li>
+            <li><a href="chamber/index.html" title="Bellvue Chamber Site">Bellvue Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" title="Site Plan Site">Site Plan</a></li>
+            <li><a href="form.html" title="Form Site" class="active">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Form</h1>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Register</legend>
+
+                <label>User Name *<input type="text" id="userName" name="userName" required></label>
+                <label>Password * <input type="password" id="password" name="password" pattern="^[A-Za-z0-9]{8,}$"
+                        required></label>
+                <label>Password Confirmation * <input type="password" id="passwordConf" name="passwordConf"
+                        pattern="^[A-Za-z0-9]{8,}$" required></label>
+                <label>Email * <input type="email" id="email" name="email" placeholder="someone@byui.edu"
+                        pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" required></label>
+                <label>Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+                <input type="submit" value="Join Now">
+
+            </fieldset>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+:root {
+  --border-color: rgb(32, 126, 152);
+  --border-color-aprove: rgb(1, 126, 1);
+  --linear-gradient1: rgb(99, 137, 143);
+  --linear-gradient2: #15667a;
+  --shadow: #999;
+}
+
+/*----------- FORM STYLING --------------*/
+form {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  grid-column: 1 / 3;
+}
+
+form fieldset {
+  border: 4px solid #ddd;
+  border-radius: 6px;
+  width: 450px;
+}
+
+form legend {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+form label {
+  display: block;
+  padding-top: 1rem;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px var(--shadow);
+  border-radius: 6px;
+  padding: 0.65rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+form input:required {
+  border-bottom: solid 8px var(--border-color);
+}
+
+form input:required:valid {
+  border-bottom: solid 8px var(--border-color-aprove);
+}
+
+form input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(
+    var(--linear-gradient1),
+    var(--linear-gradient2)
+  );
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 80%;
+  max-width: 360px;
+  margin: 1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px var(--shadow);
+}
+
+/*--------------- RECORD HTML ---------------*/
+.record {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#r {
+  width: 300px;
+  margin-bottom: 0;
+}
+
+#rangevalue {
+  font-size: 2rem;
+  color: navy;
+}
+
+#rangevalues {
+  display: flex;
+  margin: 0px 20px 0 0;
+  width: 320px;
+}
+
+#rangevalues option {
+  flex: 1 1 auto;
+}

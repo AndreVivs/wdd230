@@ -117,8 +117,8 @@ footer {
   margin-right: 6px;
 }
 
-.wf1 input[type+"submit"] {
-  border: nome;
+.wf1 input[type="submit"] {
+  border: none;
   background-image: linear-gradient(red, #6f200e);
   color: #fff;
   border-radius: 6px;
