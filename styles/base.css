@@ -116,7 +116,7 @@ footer {
   font-weight: 700;
 }
 
-main {
+.home {
   min-height: 483px;
   margin: 0 auto;
 }
@@ -125,7 +125,7 @@ h2 {
   margin: 25px 0;
 }
 
-section {
+.home-section {
   padding: 30px 50px;
   margin: 0 auto;
 }
