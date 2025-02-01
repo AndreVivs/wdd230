@@ -12,8 +12,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/base.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,40 +22,33 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-
-
-    <!-- Stylesheets 
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css"> -->
-
     <!-- Scripts -->
     <script src="scripts/index.js" defer async></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:image" content="/images/hero-img.jpg">
     <meta property="og:url" content="https://andrevivs.github.io/......">
 
 </head>
 
 <body>
     <header>
-        <img class="hero" src="images/hero-img.jpg" alt="View of the Bellvue City">
-
-        <img class="logo" src="images/logo.png" alt="Bellevue Chamber of Commerce official logo" />
-        <button type="button" id="menu"></button>
-        <nav>
-            <ul class="navigation">
-                <li><a href=" index.html" class="active">OUR DOWNTOWN</a></li>
-                <li><a href="about.html">EXPLORE</a></li>
-                <li><a href="contact.html">EVENTS</a></li>
-                <li><a href="contact.html">ABOUT</a></li>
-                <button type="button">Join Us</button>
-
-            </ul>
-        </nav>
+        <span>Bellevue Chamber of Commerce</span>
+        <div>
+            <button type="button" id="menu">.</button>
+            <button type="button" class="join">Join Us</button>
+        </div>
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href=" index.html" class="active">OUR DOWNTOWN</a></li>
+            <li><a href="about.html">EXPLORE</a></li>
+            <li><a href="contact.html">EVENTS</a></li>
+            <li><a href="contact.html">ABOUT</a></li>
+        </ul>
+    </nav>
     <main class="canva">
         <section class="intro">
             <h2>Our Downtown</h2>
@@ -73,7 +66,8 @@
         <section class="events">
             <h2>WHAT'S HAPPENING</h2>
             <div>
-                <img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay">
+                <!--<img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay"
+                    width="10px" height="10px"-->
                 <p>Annual Celebration</p>
                 <p> Thursday Feb 6th | 12pm - 1pm | Meydenbauer Center</p>
             </div>
@@ -99,17 +93,18 @@
 
         <section class="spotlights">
             <div class="spotlight">
-                <img src="images/jazz.jpg" alt="View of the Bellvue City">
+                <!--img src="images/jazz.jpg" alt="View of the Bellvue City" width="10px" height="10px"-->
                 <h3>Umami Jazz Fusion</h3>
                 <p>Friday Jan 24th | 8pm - 10pm | Bake's Place | Bar & Bistro</p>
             </div>
             <div class="spotlight">
-                <img src="images/pilates.jpg" alt="View of the Bellvue City">
+                <!--img src="images/pilates.jpg" alt="View of the Bellvue City" width="10px" height="10px"-->
                 <h3>Core Resolution: Free Pilates for New Year</h3>
                 <p>Saturday Jan 18th | 12pm - 1pm | TruFusion</p>
             </div>
             <div class="spotlight">
-                <img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay">
+                <!--img src="images/aniversary.webp" alt="years, celebration and colors of the Bellevue aniversay"
+                    width="10px" height="10px"-->
                 <h3>Annual Celebration</h3>
                 <p> Thursday Feb 6th | 12pm - 1pm | Meydenbauer Center</p>
             </div>
@@ -154,7 +149,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy;Bellvue Chamber of Commerce</p>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
         <p id="lastModified"></p>
     </footer>
 </body>

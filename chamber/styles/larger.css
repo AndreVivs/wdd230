@@ -1,15 +1,11 @@
 @media (min-width: 640px) {
   #menu {
-    display: none; /* hide hamburger button */
-  }
-
-  .navigation {
-    flex-direction: row;
+    display: none;
   }
 
   .navigation a {
     display: block;
     flex: 1 1 100%;
-    padding: 1rem 2.3rem;
+    padding: 1rem 2rem;
   }
 }
