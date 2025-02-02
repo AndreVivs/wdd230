@@ -37,11 +37,15 @@ header div {
 .join {
   padding: 10px 24px;
   background-color: #18535c;
-  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin: 55% 0%;
+}
+
+.join a {
+  text-decoration: none;
+  color: white;
 }
 
 .join:hover {
