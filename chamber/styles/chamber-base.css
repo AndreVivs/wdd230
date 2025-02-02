@@ -19,7 +19,7 @@ header {
 
 header h1 {
   display: flex;
-  color: #ffffff;
+  color: #4f4f4f;
   font-size: 2rem;
   font-weight: 500;
   width: 200px;
@@ -148,14 +148,14 @@ nav {
 .weather h3 {
   float: left;
   margin-right: 33px;
-  color: #777;
+  color: #575757;
   font-weight: 400;
   font-size: 1em;
 }
 
 span {
   margin-left: 24px;
-  color: #999;
+  color: #575757;
   font-weight: 300;
 }
 
