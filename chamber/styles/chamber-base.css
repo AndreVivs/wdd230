@@ -12,7 +12,7 @@ body {
 
 header {
   display: flex;
-  background-image: url(../images/hero-img.jpg);
+  background-image: url(../images/hero-img.webp);
   height: 320px;
   justify-content: space-between;
 }
