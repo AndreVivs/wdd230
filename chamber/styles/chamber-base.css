@@ -125,7 +125,7 @@ nav {
   margin: 8%;
   padding: 5px 30px;
   width: 250px;
-  height: 370px;
+  height: 330px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
@@ -177,7 +177,7 @@ span span {
   height: 100px;
   border-radius: 50%;
   background-color: #03a9f4;
-  -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.5s;
+  -webkit-animation: up 0.5s cubic-bezier(0.39, 0, 0.38, 1);
 }
 
 .sun {
@@ -188,7 +188,7 @@ span span {
   height: 55px;
   border-radius: 50%;
   background-color: #ffeb3b;
-  -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.5s;
+  -webkit-animation: up 0.5 cubic-bezier(0.39, 0, 0.38, 1);
 }
 
 .cloud {
@@ -200,7 +200,7 @@ span span {
   border-radius: 50%;
   background: #fff;
   box-shadow: 50px -6px 0 6px #fff, 25px -19px 0 10px #fff;
-  -webkit-animation: up 2s cubic-bezier(0.39, 0, 0.38, 1) 0.1s;
+  -webkit-animation: up 0.5 cubic-bezier(0.39, 0, 0.38, 1);
 }
 
 table {
@@ -263,7 +263,7 @@ table {
   width: 95%;
   border-radius: 3px;
   background-color: #fff;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
