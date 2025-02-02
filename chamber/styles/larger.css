@@ -7,6 +7,11 @@
     width: 92%;
     margin: 2% 4%;
   }
+
+  header {
+    height: 320px;
+  }
+
   .spotlight img,
   .events img {
     min-width: 65%;
