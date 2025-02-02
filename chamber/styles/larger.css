@@ -9,7 +9,7 @@
   }
   .spotlight img,
   .events img {
-    min-width: 400px;
+    min-width: 75%;
   }
 
   .weather {
@@ -21,7 +21,7 @@
   }
 
   .spotlight {
-    width: 46%;
+    width: 27%;
   }
 
   .spotlights {
