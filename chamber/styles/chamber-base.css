@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
 }
 
-header span {
+header h1 {
   display: flex;
   color: #ffffff;
   font-size: 2rem;
