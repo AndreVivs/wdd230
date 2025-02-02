@@ -131,6 +131,10 @@ nav {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+table th {
+  color: white;
+}
+
 .number {
   float: right;
   color: #666;
