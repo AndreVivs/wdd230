@@ -1,3 +1,7 @@
+:root {
+  --hover: #256f7a;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -46,7 +50,7 @@ header div {
 }
 
 .join:hover {
-  background-color: #256f7a;
+  background-color: var(--hover);
 }
 
 .join:active {
@@ -157,7 +161,7 @@ table th {
   font-size: 1em;
 }
 
-span {
+.number {
   margin-left: 24px;
   color: #575757;
   font-weight: 300;
@@ -285,4 +289,144 @@ footer {
   padding: 30px;
   text-align: center;
   font-weight: 700;
+}
+
+/* ---------------  WEEK 03 ------------ */
+main {
+  margin: 5% 12%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section:hover {
+  box-shadow: 0 0 10px var(--hover);
+}
+
+.main-content h2 {
+  text-align: center;
+  margin: 2%;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-gallery img {
+  max-width: 280px;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+/* ----- CALENDAR ------ */
+.month {
+  padding: 30px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.month span {
+  font-size: 18px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12.5%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.5%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+}
+
+.section h3,
+.section p {
+  margin-bottom: 3%;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  .days li {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  .days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  .days li {
+    width: 12.2%;
+  }
 }

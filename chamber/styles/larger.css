@@ -51,4 +51,29 @@
     flex: 1 1 100%;
     padding: 1rem 2rem;
   }
+
+  /* ---------------  WEEK 03 ------------ */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4%;
+  }
+
+  aside {
+    grid-column: 1/2;
+  }
+
+  .main-content {
+    grid-column: 2/3;
+  }
+
+  .photo-gallery img {
+    max-width: 500px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  .photo-gallery img:hover {
+    border-radius: 150px 15px;
+  }
 }

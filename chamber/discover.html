@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of commerce website for Bellvue, Washington">
+    <meta name="author" content="Andrea Ramos Vivas">
+
+    <title>Bellevue Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="scripts/index.js" defer async></script>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/AndreVivs/wdd230/blob/master/chamber/images/hero-img.webp?raw=true">
+    <meta property="og:url" content="https://github.com/AndreVivs/wdd230/blob/master/chamber/discover.html">
+
+</head>
+
+<body>
+    <header>
+        <h1>Bellevue Chamber of Commerce</h1>
+        <div>
+            <button type="button" id="menu">.</button>
+            <a class="join" href="index.html">Join Us</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href=" index.html" class="active">OUR DOWNTOWN</a></li>
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="grid-container">
+            <aside>
+                <div class="section">
+                    <strong>
+                        <p class="visit-message"></p>
+                    </strong>
+                </div>
+                <div class="section">
+                    <h3>Demographics and Statistical Data:</h3>
+                    <p><strong>Population:</strong> As of 2022 estimates, Bellevue has a population of approximately
+                        150,606 residents.</p>
+                    <p><strong>Median Age:</strong> The median age of residents is 38.3 years.</p>
+                    <p><strong>Ethnic Diversity:</strong> Bellevue is diverse, with 44.1% White (Non-Hispanic) and 39.4%
+                        Asian (Non-Hispanic) residents.</p>
+                    <p><strong>Languages Spoken:</strong> In addition to English, the most spoken languages at home
+                        include Chinese, Spanish, Telugu, Russian, and Hindi.</p>
+                </div>
+                <div class="section">
+                    <h3>Events and Attractions!</h3>
+                    <h4>Major Annual Events</h4>
+                    <p><strong>Bellevue Arts Fair:</strong> Held in the last week of July, this fair showcases art and
+                        crafts.</p>
+                    <p><strong>Bellevue Fashion Week:</strong> Takes place in late September, highlighting the latest
+                        fashion trends.</p>
+                    <p><strong>Bellevue Magic Season:</strong> Throughout December, the city is decorated with holiday
+                        lights, ice skating, and seasonal exhibits.</p>
+
+                    <h4>Top Attractions</h4>
+                    <p><strong>Bellevue Botanical Garden:</strong> A 53-acre garden featuring themed gardens and nature
+                        trails.</p>
+                    <p><strong>Bellevue Square:</strong> A popular shopping mall with a variety of stores and
+                        restaurants.</p>
+                    <p><strong>Bellevue Downtown Park:</strong> A 21-acre urban park perfect for walks and picnics</p>
+                </div>
+                <div class="section">
+                    <h3>Calendar</h3>
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>
+                                August<br>
+                                <span>2021</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+
+                </div>
+            </aside>
+            <div class="main-content">
+                <h2>Local Photos of Interest</h2>
+                <div class="photo-gallery">
+                    <img src="images/arts-fair.webp" alt="arts fair" width="600" height="400" loading="lazy" />
+                    <img src="images/bellevue-square.webp" alt="bellevue square" width="600" height="400"
+                        loading="lazy" />
+                    <img src="images/botanical-garden.webp" alt="botanical garden" width="600" height="400"
+                        loading="lazy" />
+                    <img src="images/downtown-park.webp" alt="downtown park" width="600" height="400" loading="lazy" />
+                    <img src="images/fashion-week.webp" alt="fashion week" width="600" height="400" loading="lazy" />
+                    <img src="images/magic-season.webp" alt="Magic Season" width="600" height="400" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
