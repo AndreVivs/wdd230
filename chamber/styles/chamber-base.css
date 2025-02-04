@@ -333,7 +333,12 @@ main {
 .photo-gallery img {
   max-width: 280px;
   height: auto;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
+}
+
+.photo-gallery span {
+  margin: 1% 16% 4% 16%;
+  font: caption;
 }
 
 /* ----- CALENDAR ------ */
