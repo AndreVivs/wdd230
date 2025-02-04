@@ -16,14 +16,14 @@ body {
 
 header {
   display: flex;
-  background: var(--hover);
+  background: #59848b;
   height: 180px;
   justify-content: space-between;
 }
 
 header h1 {
   display: flex;
-  color: #ffffff;
+  color: #f0f0f0;
   font-size: 2rem;
   font-weight: 500;
   width: 200px;
