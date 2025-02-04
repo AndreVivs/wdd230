@@ -301,6 +301,11 @@ main {
   flex-direction: column;
 }
 
+.visit-message {
+  text-align: center;
+  font-size: larger;
+}
+
 .section {
   background-color: #fff;
   padding: 20px;
