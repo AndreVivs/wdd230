@@ -1,0 +1,35 @@
+
+{
+"familyName" : "Muhlestein",
+"moveDate" : "02-05-2025",
+"membersNumber" : 5,
+"visited" : true,
+"members" : [
+    {
+        "name":"Brian",
+        "gender":"male",
+        "birthdate":"12-19-1996"
+    },
+        {
+        "name":"Samantha",
+        "gender":"female",
+        "birthdate":"3-22-1992"
+    },
+        {
+        "name":"Juan",
+        "gender":"male",
+        "birthdate":"4-12-2020"
+    },
+        {
+        "name":"Tyler",
+        "gender":"male",
+        "birthdate":"8-9-1982"
+    },
+        {
+        "name":"Rachel",
+        "gender":"female",
+        "birthdate":"1-18-1985"
+    }
+]
+
+}
