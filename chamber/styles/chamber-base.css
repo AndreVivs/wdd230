@@ -16,19 +16,23 @@ body {
 
 header {
   display: flex;
-  background: #59848b;
+  background: url(../images/hero-img.webp);
   height: 180px;
   justify-content: space-between;
 }
 
 header h1 {
   display: flex;
-  color: #202223;
+  color: #000000;
+  background-color: #5579929e;
   font-size: 1.5rem;
   font-weight: 500;
   width: 200px;
+  height: fit-content;
   text-align: center;
   margin: 2% 4%;
+  border-radius: 20px;
+  padding: 4px;
 }
 
 header div {
