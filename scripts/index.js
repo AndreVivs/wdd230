@@ -49,3 +49,38 @@ if (numVisits !== 0) {
 
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
+
+// Weather Week 05
+const currentTemp = document.querySelector("#current-temp");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("figcaption");
+
+const APIKey = "991816109fd541267e639540dee78786";
+const Lat = "19.438332324259605";
+const Long = "-99.13193968870992";
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${Lat}&lon=${Long}&units=imperial&appid=${APIKey}`;
+
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+    } else {
+      throw Error(await response.text());
+    }
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+apiFetch();
+
+async function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute("src", iconsrc);
+  weatherIcon.setAttribute("alt", desc);
+  captionDesc.innerHTML = `${desc}`;
+}
