@@ -51,9 +51,6 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 // Weather Week 05
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const captionDesc = document.querySelector("figcaption");
 
 const APIKey = "991816109fd541267e639540dee78786";
 const Lat = "19.438332324259605";
@@ -66,6 +63,7 @@ async function apiFetch() {
     if (response.ok) {
       const data = await response.json();
       console.log(data);
+      displayResults(data);
     } else {
       throw Error(await response.text());
     }
@@ -77,10 +75,15 @@ async function apiFetch() {
 apiFetch();
 
 async function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const weatherDisplay = document.querySelector(".weather");
+  const img = document.createElement("img");
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
-  weatherIcon.setAttribute("src", iconsrc);
-  weatherIcon.setAttribute("alt", desc);
-  captionDesc.innerHTML = `${desc}`;
+  img.setAttribute("src", iconsrc);
+  img.setAttribute("alt", desc);
+
+  weatherDisplay.innerHTML = data.name;
+  weatherDisplay.appendChild(img);
+  weatherDisplay.innerHTML += `<br>${data.main.temp}&deg;F`;
+  weatherDisplay.innerHTML += `<br>${desc}`;
 }

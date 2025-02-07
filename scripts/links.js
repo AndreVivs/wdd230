@@ -15,13 +15,14 @@ async function getLinks() {
 
 getLinks();
 
-function displayLinks(data) {
+/*function displayLinks(data) {
   const list = document.querySelector("#links");
   data.links.forEach((link) => {
     let item = document.createElement("li");
     let a = document.createElement("a");
-    a.setAttribute("href", baseURL + link.url);
-    a.textContent = link.label;
-    item.appendChild(a);
+    a.setAttribute("href", link.url);
+    a.textContent = link.title;
+    item.appendChild(`${data.week}:${a}`);
+    list.appendChild(item);
   });
-}
+}*/
