@@ -139,7 +139,7 @@ nav {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-table th {
+.weather-forecast table th {
   color: white;
 }
 
@@ -211,7 +211,7 @@ span span {
   -webkit-animation: up 0.5 cubic-bezier(0.39, 0, 0.38, 1);
 }
 
-table {
+.weather-forecast table {
   position: relative;
   top: 20px;
   width: 100%;
@@ -462,7 +462,7 @@ label {
   margin: 2rem 0;
   border: 1px solid #ddd;
   border-radius: 6px;
-  padding: 0.5rem 2%;
+  padding: 1.5rem 2%;
 }
 
 .wf1 legend {
@@ -472,12 +472,6 @@ label {
 
 .wf1 label {
   display: block;
-  padding-top: 1rem;
-  color: rgb(0, 0, 0);
-  font-size: 0.9rem;
-}
-
-.wf1 div {
   padding-top: 1rem;
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
@@ -526,6 +520,49 @@ label {
   border-bottom: solid 8px green;
 }
 
+.membership {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.table-container {
+  top: 20px;
+  width: 60%;
+  text-align: left;
+  border-collapse: collapse; /* Evita los bordes dobles */
+}
+
+.table-container caption {
+  font-size: 1rem;
+  margin: 1rem;
+  text-align: left;
+}
+
 .thank-you-message {
   margin: 10%;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid black;
+  padding: 5px 0px;
+  text-align: center;
+  color: #000000;
+}
+
+.table-container tr td:first-child {
+  text-align: left;
+  padding-left: 1%;
+}
+
+.table-container tr th:first-child {
+  text-align: left;
+  padding-left: 1%;
+}
+
+.join-form h1 {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0;
 }

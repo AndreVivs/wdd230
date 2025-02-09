@@ -39,7 +39,7 @@
         <h1>Bellevue Chamber of Commerce</h1>
         <div>
             <button type="button" id="menu">.</button>
-            <a class="join" href="index.html">Join Us</a>
+            <a class="join" href="join.html">Join Us</a>
         </div>
     </header>
     <nav>
@@ -47,7 +47,7 @@
             <li><a href=" index.html" class="active">OUR DOWNTOWN</a></li>
             <li><a href="#">EXPLORE</a></li>
             <li><a href="#">EVENTS</a></li>
-            <li><a href="#">ABOUT</a></li>
+            <li><a href="join.html">APLICATION</a></li>
         </ul>
     </nav>
     <main class="join-form">
@@ -67,19 +67,86 @@
                         required></label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="membership">
                 <legend>Membership Level</legend>
-                <label><input type="radio" name="membership-level" id="gold" value="gold" required> Gold
-                    Membership</label>
-                <label><input type="radio" name="membership-level" id="silver" value="silver"> Silver Membership</label>
-                <label><input type="radio" name="membership-level" id="bronze" value="bronze"> Bronze Membership</label>
-                <label><input type="radio" name="membership-level" id="np" value="np"> NP Membership (Non-Profit, No
-                    Fee)</label>
+                <div>
+                    <label><input type="radio" name="membership-level" id="gold" value="gold" required> Gold
+                        Membership</label>
+                    <label><input type="radio" name="membership-level" id="silver" value="silver"> Silver
+                        Membership</label>
+                    <label><input type="radio" name="membership-level" id="bronze" value="bronze"> Bronze
+                        Membership</label>
+                    <label><input type="radio" name="membership-level" id="np" value="np"> NP Membership (Non-Profit, No
+                        Fee)</label>
+                </div>
+                <!-- Membership Benefits Section -->
+                <table class="table-container">
+                    <thead>
+                        <tr>
+                            <th scope="col">Benefits</th>
+                            <th scope="col">Gold</th>
+                            <th scope="col">Silver</th>
+                            <th scope="col">Bronze</th>
+                            <th scope="col">NP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Access to Community Events</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Networking Opportunities</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                        </tr>
+                        <tr>
+                            <td>Spotlight Listing on Directory</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Discounts on Events and Trainings</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive Access to Training Sessions</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Featured Spot on Homepage</td>
+                            <td>✔️</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                        </tr>
+                        <tr>
+                            <td>Exclusive Event Invitations</td>
+                            <td>✔️</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                        </tr>
+                    </tbody>
+                </table>
             </fieldset>
 
             <fieldset>
                 <legend>Business / Organization's Description</legend>
-                <label><textarea name="description" id="description" cols="30" rows="5" required></textarea></label>
+                <label><textarea name="description" id="description" cols="30" rows="10" required></textarea></label>
             </fieldset>
 
             <input type="hidden" name="timestamp" id="timestamp">
