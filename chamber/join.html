@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of commerce website for Bellvue, Washington">
+    <meta name="author" content="Andrea Ramos Vivas">
+
+    <title>Bellevue Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="scripts/index.js" defer async></script>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://github.com/AndreVivs/wdd230/blob/master/chamber/images/hero-img.webp?raw=true">
+    <meta property="og:url" content="https://github.com/AndreVivs/wdd230/blob/master/chamber/index.html">
+
+</head>
+
+<body>
+    <header>
+        <h1>Bellevue Chamber of Commerce</h1>
+        <div>
+            <button type="button" id="menu">.</button>
+            <a class="join" href="index.html">Join Us</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href=" index.html" class="active">OUR DOWNTOWN</a></li>
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main class="join-form">
+        <h1>Bellevue Chamber of Commerce Application</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name * <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name * <input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position * <input type="text" name="title" id="title" required
+                        pattern="^[A-Za-z\- ]{7,}$"
+                        title="Minimum 7 characters - letters, hyphens, and spaces only"></label>
+                <label>Email * <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label>Phone * <input type="tel" name="phone" id="phone" placeholder="+12340984567" required></label>
+                <label>Business / Organization's Name * <input type="text" name="businessName" id="businessName"
+                        required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership-level" id="gold" value="gold" required> Gold
+                    Membership</label>
+                <label><input type="radio" name="membership-level" id="silver" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership-level" id="bronze" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership-level" id="np" value="np"> NP Membership (Non-Profit, No
+                    Fee)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business / Organization's Description</legend>
+                <label><textarea name="description" id="description" cols="30" rows="5" required></textarea></label>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
