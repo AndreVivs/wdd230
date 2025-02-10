@@ -5,7 +5,7 @@
       "address": "400 108th Ave NE, Bellevue, WA 98004",
       "phone": "(425) 378-4000",
       "website": "https://www.t-mobile.com/",
-      "image": "",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/t-mobile.webp",
       "membership_level": "Platinum",
       "description": "T-Mobile US is a leading telecommunications company providing wireless voice, messaging, and data services in the United States."
     },
@@ -14,7 +14,7 @@
       "address": "777 108th Ave NE, Bellevue, WA 98004",
       "phone": "(425) 256-8000",
       "website": "https://www.symetra.com/",
-      "image": "https://www.symetra.com/wp-content/themes/symetra/images/logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/symetra.webp",
       "membership_level": "Gold",
       "description": "Symetra offers a range of insurance products, including life, disability, and annuities, serving individuals and businesses."
     },
@@ -23,7 +23,7 @@
       "address": "10401 NE 8th St, Bellevue, WA 98004",
       "phone": "(425) 755-2700",
       "website": "https://www.eddiebauer.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Eddie_Bauer_logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/eddie-Bauer.webp",
       "membership_level": "Silver",
       "description": "Eddie Bauer is an American clothing retailer known for its outdoor gear and apparel."
     },
@@ -32,7 +32,7 @@
       "address": "777 106th Ave NE, Bellevue, WA 98004",
       "phone": "(425) 468-7400",
       "website": "https://www.paccar.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Paccar_logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/paccar-Inc.webp",
       "membership_level": "Platinum",
       "description": "Paccar is a global technology company specializing in the design and manufacture of high-quality, light, medium, and heavy-duty trucks."
     },
@@ -41,7 +41,7 @@
       "address": "10400 NE 4th St, Bellevue, WA 98004",
       "phone": "(425) 889-9642",
       "website": "https://www.bungie.net/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Bungie_logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/bungie-Inc.webp",
       "membership_level": "Gold",
       "description": "Bungie is a video game developer known for creating the Halo and Destiny franchises."
     },
@@ -50,7 +50,7 @@
       "address": "1050 114th Ave SE, Bellevue, WA 98004",
       "phone": "(844) 324-2360",
       "website": "https://www.smartsheet.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Smartsheet_logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/smartsheet.webp",
       "membership_level": "Silver",
       "description": "Smartsheet is a platform for work management and automation solutions."
     },
@@ -59,7 +59,7 @@
       "address": "10900 NE 8th St, Bellevue, WA 98004",
       "phone": "(425) 889-9642",
       "website": "https://www.valvesoftware.com/",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Valve_Logo.svg",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/valve-Corporation.webp",
       "membership_level": "Gold",
       "description": "Valve is a video game developer and digital distribution company known for the Steam platform and games like Half-Life and Portal."
     }
