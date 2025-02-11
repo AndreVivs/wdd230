@@ -568,24 +568,15 @@ label {
 }
 
 /*---------------WEEK05--------------*/
-
-main {
-  margin: 0 auto;
-  padding: 0.5rem;
-  max-width: 700px;
-  background-color: #fff;
-  font-family: Roboto, Helvetica, sans-serif;
-}
-
-.menu {
+.directory-menu {
   margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
-  background-color: #bed;
+  background-color: var(--hover);
   text-align: center;
 }
 
-.menu button {
+.directory-menu button {
   padding: 1rem;
   font-weight: 700;
 }
