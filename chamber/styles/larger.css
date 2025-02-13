@@ -20,10 +20,11 @@
   .events img {
     min-width: 65%;
   }
-
+  .member,
   .weather {
     margin: 10%;
     height: 500px;
+    margin-bottom: 0;
   }
 
   .join {
