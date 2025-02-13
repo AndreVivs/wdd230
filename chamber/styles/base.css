@@ -518,6 +518,11 @@ label {
   font-weight: 700;
 }
 
+.directory-title {
+  text-align: center;
+  margin: 20px;
+}
+
 section {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;

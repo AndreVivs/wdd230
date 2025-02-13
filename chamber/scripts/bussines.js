@@ -20,11 +20,6 @@ function displayBussines(businesses) {
   const display = document.querySelector("article");
   display.innerHTML = "";
 
-  let h2 = document.createElement("h2");
-  h2.textContent = "Directory Business";
-  h2.style.textAlign = "center";
-  display.appendChild(h2);
-
   businesses.forEach((business) => {
     let card = document.createElement("section");
 
