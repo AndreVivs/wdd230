@@ -24,6 +24,7 @@
 
     <!-- Scripts -->
     <script src="scripts/index.js" defer async></script>
+    <script src="scripts/weather.js" defer async></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
@@ -52,40 +53,8 @@
     </nav>
     <main class="canva">
         <div class="weather">
-            <h2>Bellevue</h2>
-            <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
-            <span class="number">23°</span>
-            <div class="sky">
-                <div class="sun"></div>
-                <div class="cloud">
-                    <div class="circle-small"></div>
-                    <div class="circle-tall"></div>
-                    <div class="circle-medium"></div>
-                </div>
-            </div>
-            <table class="weather-forecast">
-                <tr>
-                    <td>TUE</td>
-                    <td>WED</td>
-                    <td>THU</td>
-                    <td>FRI</td>
-                    <td>SAT</td>
-                </tr>
-                <tr>
-                    <td>30°</td>
-                    <td>34°</td>
-                    <td>36°</td>
-                    <td>34°</td>
-                    <td>37°</td>
-                </tr>
-                <tr>
-                    <td>17°</td>
-                    <td>22°</td>
-                    <td>19°</td>
-                    <td>23°</td>
-                    <td>19°</td>
-                </tr>
-            </table>
+            <h2 id="place"></h2>
+            <div id="weatherByDays"></div>
         </div>
         <section class="intro">
             <h2>Our Downtown</h2>

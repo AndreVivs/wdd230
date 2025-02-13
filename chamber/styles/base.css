@@ -132,107 +132,35 @@ nav {
   grid-column: 1 / 2;
   margin: 8%;
   padding: 5px 30px;
-  width: 250px;
-  height: 330px;
+  width: 85%;
+  height: 450px;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.weather-forecast table th {
-  color: white;
+#weatherByDays {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
-.number {
-  float: right;
-  color: #666;
-  font-weight: 300;
-  font-size: 5.5em;
-  line-height: 0.2em;
-  margin: 50px 0;
+#weatherByDays figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  text-align: center;
+  margin: 5% 0;
 }
 
 .weather h2 {
-  font-weight: 300;
-  font-size: 2.25em;
-}
-
-.weather h3 {
-  float: left;
-  margin-right: 33px;
-  color: #575757;
-  font-weight: 400;
-  font-size: 1em;
-}
-
-.number {
-  margin-left: 24px;
-  color: #575757;
-  font-weight: 300;
-}
-
-span span {
-  margin-left: 0;
-}
-
-.dot {
-  font-size: 0.9em;
-}
-
-.sky {
-  margin-top: 100px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #03a9f4;
-  -webkit-animation: up 0.5s cubic-bezier(0.39, 0, 0.38, 1);
-}
-
-.sun {
-  position: relative;
-
-  top: -3px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-color: #ffeb3b;
-  -webkit-animation: up 0.5 cubic-bezier(0.39, 0, 0.38, 1);
-}
-
-.cloud {
-  position: relative;
-  display: block;
-  content: "";
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 50px -6px 0 6px #fff, 25px -19px 0 10px #fff;
-  -webkit-animation: up 0.5 cubic-bezier(0.39, 0, 0.38, 1);
-}
-
-.weather-forecast table {
-  position: relative;
-  top: 20px;
-  width: 100%;
+  font-weight: 600;
+  font-size: 1.7em;
   text-align: center;
-}
-
-@-webkit-keyframes up {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(15px);
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateY(15px);
-  }
-  99% {
-    -webkit-animation-play-state: paused;
-  }
-  100% {
-    opacity: 1;
-  }
+  margin-top: 7%;
 }
 
 .intro {

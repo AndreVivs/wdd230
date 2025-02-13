@@ -22,7 +22,8 @@
   }
 
   .weather {
-    margin: 20%;
+    margin: 10%;
+    height: 500px;
   }
 
   .join {
