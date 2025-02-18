@@ -142,7 +142,7 @@ nav {
 
 /* --- HOME / DISCOVER / DIRECTORY / JOIN --- */
 main {
-  margin: 5% 12%;
+  margin: 7%;
 }
 
 .canva {
@@ -568,10 +568,6 @@ img {
   max-width: 100%;
 }
 
-.grid h3 {
-  font-family: "Caveat", cursive;
-}
-
 .list {
   display: flex;
   flex-direction: column;
@@ -627,7 +623,7 @@ section {
 
 .list section h3 {
   font-size: 1rem;
-  font-family: Roboto, Helvetica, sans-serif;
+  align-self: center;
 }
 
 .list section:nth-child(even) {

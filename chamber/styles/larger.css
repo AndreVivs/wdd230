@@ -1,4 +1,7 @@
 @media (min-width: 830px) {
+  main {
+    margin: 5% 12%;
+  }
   .canva {
     display: grid;
     grid-template-columns: 35% 65%;
