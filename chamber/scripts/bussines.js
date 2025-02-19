@@ -17,7 +17,7 @@ async function getBussines() {
 getBussines();
 
 function displayBussines(businesses) {
-  const display = document.querySelector("article");
+  const display = document.getElementById("directory");
   display.innerHTML = "";
 
   businesses.forEach((business) => {
