@@ -6,9 +6,9 @@ async function getBussines() {
     const response = await fetch(requestURL);
     const data = await response.json();
     console.log(data);
-    const qualified = qualifiedMembers();
-    if (qualified) {
-      displaySpotligth(data.businesses);
+
+    if (qualifiedMembers()) {
+      displaySpotlight(data.businesses);
     }
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -41,32 +41,36 @@ function qualifiedMembers() {
   }
 }
 
-function displaySpotligth(spotlights) {
+function displaySpotlight(spotlights) {
   let max = 3;
   let min = 2;
   let cardNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-  //let randomBussinesIndex = Math.floor(Math.random() * spotlights.length);
 
-  const display = document.querySelector(".spotlights");
-  display.innerHTML = "";
+  // Crear una nueva sección con la clase spotlights
+  let sectionSpotlights = document.createElement("section");
+  sectionSpotlights.classList.add("spotlights");
+
+  let sectionEvents = document.querySelector(".events");
+
+  // Verificar si la sección ya existe y eliminarla para evitar duplicados
+  let oldSpotlights = document.querySelector(".spotlights");
+  if (oldSpotlights) {
+    oldSpotlights.remove();
+  }
 
   let usedIndexes = new Set();
 
-  for (
-    let spotlightsCreated = 0;
-    spotlightsCreated < cardNumber;
-    spotlightsCreated++
-  ) {
-    let randomBussinesIndex;
+  for (let i = 0; i < cardNumber; i++) {
+    let randomBusinessIndex;
 
-    // Asegurar que el negocio seleccionado no se repita
+    // Asegurar que no se repitan negocios
     do {
-      randomBussinesIndex = Math.floor(Math.random() * spotlights.length);
-    } while (usedIndexes.has(randomBussinesIndex));
+      randomBusinessIndex = Math.floor(Math.random() * spotlights.length);
+    } while (usedIndexes.has(randomBusinessIndex));
 
-    usedIndexes.add(randomBussinesIndex);
+    usedIndexes.add(randomBusinessIndex);
 
-    let business = spotlights[randomBussinesIndex];
+    let business = spotlights[randomBusinessIndex];
 
     let card = document.createElement("div");
     let img = document.createElement("img");
@@ -85,13 +89,15 @@ function displaySpotligth(spotlights) {
     text.textContent = business.description;
     a.href = business.website;
     a.textContent = "Website";
+    a.target = "_blank";
 
     card.appendChild(img);
     textContainer.appendChild(title);
     textContainer.appendChild(text);
     textContainer.appendChild(a);
     card.appendChild(textContainer);
-
-    display.appendChild(card);
+    sectionSpotlights.appendChild(card);
   }
+
+  sectionEvents.insertAdjacentElement("afterend", sectionSpotlights);
 }

@@ -227,21 +227,20 @@ main {
 }
 
 /* Estilo para el botón */
+
 .explore-button {
+  display: inline-block;
+  text-align: center;
   background-color: #18535c;
   color: #ffffff;
   padding: 10px 20px;
+  text-decoration: none;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  display: inline-block;
   margin: 5% 0;
-}
-
-.explore-button a {
   color: #ffffff;
-  text-decoration: none;
   font-size: medium;
 }
 
