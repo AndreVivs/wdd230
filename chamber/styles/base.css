@@ -504,7 +504,11 @@ label {
 }
 
 .thank-you-message {
-  margin: 10%;
+  margin: 2% 10% 12% 10%;
+}
+
+.thank-you-page h1 {
+  margin: 2% 10%;
 }
 
 .table-container th,
