@@ -5,7 +5,6 @@ async function getBussines() {
   try {
     const response = await fetch(requestURL);
     const data = await response.json();
-    console.log(data);
 
     if (qualifiedMembers()) {
       displaySpotlight(data.businesses);
