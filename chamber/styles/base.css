@@ -191,7 +191,7 @@ main {
   margin: 5% 0;
 }
 
-.weather h2 {
+.weather #place {
   font-weight: 600;
   font-size: 1.7em;
   text-align: center;
