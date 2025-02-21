@@ -23,7 +23,7 @@
       "address": "10401 NE 8th St, Bellevue, WA 98004",
       "phone": "(425) 755-2700",
       "website": "https://www.eddiebauer.com/",
-      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/eddie-Bauer.webp",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/eddie-bauer.webp",
       "membership_level": "Silver",
       "description": "Eddie Bauer is an American clothing retailer known for its outdoor gear and apparel."
     },
@@ -59,7 +59,7 @@
       "address": "10900 NE 8th St, Bellevue, WA 98004",
       "phone": "(425) 889-9642",
       "website": "https://www.valvesoftware.com/",
-      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/valve-Corporation.webp",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/valve-corporation.webp",
       "membership_level": "Gold",
       "description": "Valve is a video game developer and digital distribution company known for the Steam platform and games like Half-Life and Portal."
     }
