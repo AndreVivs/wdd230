@@ -57,14 +57,13 @@
                 <legend>Applicant Information</legend>
                 <label>First Name * <input type="text" name="fname" id="fname" required></label>
                 <label>Last Name * <input type="text" name="lname" id="lname" required></label>
-                <label>Title or Position * <input type="text" name="title" id="title" required
-                        pattern="^[A-Za-z\- ]{7,}$"
-                        title="Minimum 7 characters - letters, hyphens, and spaces only"></label>
+                <label>Title or Position * <input type="text" name="title" id="title" required></label>
                 <label>Email * <input type="email" name="email" id="email" placeholder="someone@gmail.com"
                         required></label>
                 <label>Phone * <input type="tel" name="phone" id="phone" placeholder="+12340984567" required></label>
-                <label>Business / Organization's Name * <input type="text" name="businessName" id="businessName"
-                        required></label>
+                <label>Business Title / Organization's Name * <input type="text" name="businessName" id="businessName"
+                        required pattern="^[A-Za-z\- ]{7,}$"
+                        title="Minimum 7 characters - letters, hyphens, and spaces only"></label>></label>
             </fieldset>
 
             <fieldset class="membership">
@@ -154,7 +153,8 @@
         </form>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> Andrea Ramos | Washington State - USA </p>
+        <p>Contact Information: 425 - 1235 - 678</p>
+        <p>&copy; <span id="currentyear"></span> Andrea Ramos | WDD 230 </p>
         <p id="lastModified"></p>
     </footer>
 </body>
