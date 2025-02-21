@@ -83,4 +83,13 @@
   .photo-gallery img:hover {
     border-radius: 150px 15px;
   }
+
+  .membership {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .table-container {
+    margin: 0px;
+  }
 }

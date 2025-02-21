@@ -233,7 +233,7 @@ main {
 }
 
 .event {
-  margin-top: 2%;
+  margin-top: 2.4%;
 }
 
 /* Estilo para el botón */
@@ -501,10 +501,11 @@ label {
 }
 
 .table-container {
-  top: 20px;
+  position: relative;
+  margin: 20px 0 1px 8px;
   width: 60%;
   text-align: left;
-  border-collapse: collapse; /* Evita los bordes dobles */
+  border-collapse: collapse;
 }
 
 .table-container caption {
