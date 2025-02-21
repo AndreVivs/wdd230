@@ -24,6 +24,7 @@
 
     <!-- Scripts -->
     <script src="scripts/index.js" defer async></script>
+    <script src="scripts/hidden.js" defer async></script>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Andrea Vivas - WDD230 - Web Frontend Development">
@@ -52,7 +53,7 @@
     </nav>
     <main class="join-form">
         <h1>Bellevue Chamber of Commerce Application</h1>
-        <form method="get" action="thankyou.html" class="wf1">
+        <form id="hidden" method="get" action="thankyou.html" class="wf1">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>First Name * <input type="text" name="fname" id="fname" required></label>
@@ -63,7 +64,7 @@
                 <label>Phone * <input type="tel" name="phone" id="phone" placeholder="+12340984567" required></label>
                 <label>Business Title / Organization's Name * <input type="text" name="businessName" id="businessName"
                         required pattern="^[A-Za-z\- ]{7,}$"
-                        title="Minimum 7 characters - letters, hyphens, and spaces only"></label>></label>
+                        title="Minimum 7 characters - letters, hyphens, and spaces only"></label></label>
             </fieldset>
 
             <fieldset class="membership">
