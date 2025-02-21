@@ -62,6 +62,24 @@
       "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/valve-corporation.webp",
       "membership_level": "Gold",
       "description": "Valve is a video game developer and digital distribution company known for the Steam platform and games like Half-Life and Portal."
+    },
+     {
+      "name": "Microsoft Corporation",
+      "address": "1 Microsoft Way, Redmond, WA 98052",
+      "phone": "(425) 882-8080",
+      "website": "https://www.microsoft.com",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/microsoft.webp",
+      "membership_level": "Platinum",
+      "description": "Microsoft is a global technology company known for its software products, cloud services, and devices, such as the Windows operating system and Xbox console."
+    },
+    {
+      "name": "Amazon",
+      "address": "410 Terry Ave N, Seattle, WA 98109",
+      "phone": "(206) 266-1000",
+      "website": "https://www.amazon.com",
+      "image": "https://raw.githubusercontent.com/AndreVivs/wdd230/refs/heads/master/chamber/images/amazon.webp",
+      "membership_level": "Gold",
+      "description": "Amazon is one of the largest global e-commerce and cloud services companies, offering a wide range of products and services from online retail to Amazon Web Services (AWS)."
     }
   ]
 }
