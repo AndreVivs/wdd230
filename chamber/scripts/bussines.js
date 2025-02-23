@@ -8,7 +8,7 @@ async function getBussines() {
   try {
     const response = await fetch(requestURL);
     const data = await response.json();
-    displayBussines(data.businesses); // Cambiar de `data.members` a `data.businesses`
+    displayBussines(data.businesses);
   } catch (error) {
     console.error("Error fetching data:", error);
   }
@@ -47,7 +47,7 @@ function displayBussines(businesses) {
 // Display images in a grid or list
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.getElementById("directory");
 
 gridbutton.addEventListener("click", () => {
   // example using arrow function
